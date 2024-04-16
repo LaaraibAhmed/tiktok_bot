@@ -11,7 +11,7 @@ const Nextpagebtn = (props: Nextpagebtnprops) => {
   return (
     <Link
       className="text-[#663300] font-bold p-[1%] mx-[10%] bg-[#FF7F00] rounded-lg hover:bg-[#ff800092] transition-transform hover:scale-110"
-      href={"http://localhost:3000/dashboard"}
+      href={"/dashboard"}
     >
       {props.btn_type}
     </Link>

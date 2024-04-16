@@ -1,15 +1,8 @@
 import "@/app/globals.css";
-import { Inter } from "next/font/google";
-
-const inter = Inter({
-  subsets: ["latin"],
-  // this will be the css variable
-  variable: "--font-inter",
-});
 
 export const metadata = {
   title: "Avatar Creator",
-  description: "Rive avatar creator",
+  description: "...",
 };
 
 export default function RootLayout({
@@ -17,15 +10,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html lang="en" className={`${inter.variable}`}>
-      <link
-        rel="preload"
-        href="/avatar_demo.riv"
-        as="fetch"
-        crossOrigin="anonymous"
-      />
-      <body className="bg-[#121212]">{children}</body>
-    </html>
-  );
+  return <body>{children}</body>;
 }

@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import React from "react";
 
@@ -23,7 +22,7 @@ const Page = () => {
         </p>
         <Link
           className="px-4 py-2 bg-[#FF7F00] text-white rounded hover:bg-[#885f37] transition duration-300"
-          href={"http://localhost:3000/avatarbuilder"}
+          href={"/avatarbuilder"}
         >
           Get Started
         </Link>
